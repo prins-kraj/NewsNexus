@@ -2,172 +2,22 @@ import React, { Component } from 'react'
 import Newsitems from './Newsitems'
 
 export class News extends Component {
-  articles = [
-    {
-      "source": {
-        "id": "espn-cric-info",
-        "name": "ESPN Cric Info"
-      },
-      "author": null,
-      "title": "PCB hands Umar Akmal three-year ban from all cricket | ESPNcricinfo.com",
-      "description": "Penalty after the batsman pleaded guilty to not reporting corrupt approaches | ESPNcricinfo.com",
-      "url": "http://www.espncricinfo.com/story/_/id/29103103/pcb-hands-umar-akmal-three-year-ban-all-cricket",
-      "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1099495_800x450.jpg",
-      "publishedAt": "2020-04-27T11:41:47Z",
-      "content": "Umar Akmal's troubled cricket career has hit its biggest roadblock yet, with the PCB handing him a ban from all representative cricket for three years after he pleaded guilty of failing to report det… [+1506 chars]"
-    },
-    {
-      "source": {
-        "id": "espn-cric-info",
-        "name": "ESPN Cric Info"
-      },
-      "author": null,
-      "title": "What we learned from watching the 1992 World Cup final in full again | ESPNcricinfo.com",
-      "description": "Wides, lbw calls, swing - plenty of things were different in white-ball cricket back then | ESPNcricinfo.com",
-      "url": "http://www.espncricinfo.com/story/_/id/28970907/learned-watching-1992-world-cup-final-full-again",
-      "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1219926_1296x729.jpg",
-      "publishedAt": "2020-03-30T15:26:05Z",
-      "content": "Last week, we at ESPNcricinfo did something we have been thinking of doing for eight years now: pretend-live ball-by-ball commentary for a classic cricket match. We knew the result, yes, but we tried… [+6823 chars]"
-    },
-    {
-      "source": {
-        "id": "bbc-news",
-        "name": "BBC News"
-      },
-      "author": "BBC News",
-      "title": "Sudan conflict: Warring factions agree seven-day ceasefire, US says",
-      "description": "US State Department urges military leaders to uphold agreement after past failed peace attempts.",
-      "url": "http://www.bbc.co.uk/news/world-africa-65661257",
-      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/C057/production/_129793294_sudan.jpg",
-      "publishedAt": "2023-05-21T04:37:16.4087795Z",
-      "content": "A temporary ceasefire in Sudan has been agreed as fighting between two warring factions entered its sixth week. \r\nPrevious truce attempts between Sudan's regular army and the paramilitary Rapid Suppo… [+3021 chars]"
-    },
-    {
-      "source": {
-        "id": "bbc-news",
-        "name": "BBC News"
-      },
-      "author": "BBC News",
-      "title": "At least nine killed in El Salvador stadium stampede",
-      "description": "The disaster happened during a clash between two rival football sides in the capital San Salvador.",
-      "url": "http://www.bbc.co.uk/news/world-latin-america-65662194",
-      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/F9C3/production/_129793936_police.jpg",
-      "publishedAt": "2023-05-21T04:22:15.5173026Z",
-      "content": "At least nine people have died after a stampede at a football stadium in El Salvador's capital, San Salvador, officials have said. \r\nPolice said seven men and two women were among the dead, with all … [+1622 chars]"
-    },
-    {
-      "source": {
-        "id": "bbc-news",
-        "name": "BBC News"
-      },
-      "author": "BBC News",
-      "title": "US President Biden to meet Ukraine's President Zelensky at G7 leaders' summit in Japan",
-      "description": "Leaders of the G7 countries gather in Hiroshima, amid a focus on Ukraine and tensions with China.",
-      "url": "http://www.bbc.co.uk/news/live/uk-65647898",
-      "urlToImage": "https://m.files.bbci.co.uk/modules/bbc-morph-news-waf-page-meta/5.3.0/bbc_news_logo.png",
-      "publishedAt": "2023-05-20T22:52:15.783184Z",
-      "content": "After a day or so of will he or wont he?, Volodomyr Zelensky made a scene-stealing arrival at the G7 summit in Hiroshima, Japan on Saturday. \r\nAs you can imagine, the Ukrainian president had a busy t… [+926 chars]"
-    },
-    {
-      "source": {
-        "id": "bbc-news",
-        "name": "BBC News"
-      },
-      "author": "BBC News",
-      "title": "British novelist Martin Amis dies aged 73",
-      "description": "The influential author of Money and London Fields was one of the most celebrated writers of his generation.",
-      "url": "http://www.bbc.co.uk/news/entertainment-arts-65660768",
-      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/EDED/production/_129790906_gettyimages-458196906.jpg",
-      "publishedAt": "2023-05-20T20:22:21.6746607Z",
-      "content": "Martin Amis, one of the most celebrated British novelists of his generation, has died aged 73.\r\nHe died of oesophageal cancer at his Florida home, the New York Times said, quoting his wife.\r\nAmis is … [+2739 chars]"
-    },
-    {
-      "source": {
-        "id": "bbc-news",
-        "name": "BBC News"
-      },
-      "author": "BBC News",
-      "title": "Clare Nowland: Police 'don't intend' to release video of 95-year-old's Tasering",
-      "description": "Care home resident Clare Nowland remains in critical condition three days after the incident.",
-      "url": "http://www.bbc.co.uk/news/world-australia-65657999",
-      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/8F65/production/_129790763_clare_nowland.jpg",
-      "publishedAt": "2023-05-20T17:37:22.8610762Z",
-      "content": "Australian police say they will not release bodycam footage of the moment an elderly woman with dementia was Tasered by an officer.\r\nClare Nowland, 95, is in critical condition after an officer disch… [+1607 chars]"
-    },
-    {
-      "source": {
-        "id": "bbc-news",
-        "name": "BBC News"
-      },
-      "author": "BBC News",
-      "title": "Ukraine war: Kyiv rejects Wagner claim over Bakhmut",
-      "description": "Wagner mercenaries claim the city has fallen, but Ukraine denies it saying the situation is \"critical\".",
-      "url": "http://www.bbc.co.uk/news/world-europe-65657621",
-      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/4A0A/production/_129645981_230509_ukraine_bealebakhmut_013.jpg",
-      "publishedAt": "2023-05-20T16:07:19.3452603Z",
-      "content": "Russian mercenaries are in full control of the Ukrainian city of Bakhmut, their chief says - a claim immediately dismissed by Ukrainian officials.\r\n\"We took the whole city,\" said Yevgeny Prigozhin, p… [+2680 chars]"
-    },
-    {
-      "source": {
-        "id": "bbc-news",
-        "name": "BBC News"
-      },
-      "author": "BBC News",
-      "title": "Dom Phillips and Bruno Pereira: Brazilian former official indicted over murders",
-      "description": "The former head of Brazil's Indigenous protection agency is accused of indirectly playing a part in journalist's death.",
-      "url": "http://www.bbc.co.uk/news/world-latin-america-65654878",
-      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/3B54/production/_129788151_phillips.jpg",
-      "publishedAt": "2023-05-20T04:52:12.4295514Z",
-      "content": "Police have indicted the former head of Brazil's Indigenous protection agency for his alleged role in the murder of British journalist Dom Phillips.\r\nPolice didn't identify the official, named as Mar… [+2371 chars]"
-    },
-    {
-      "source": {
-        "id": "bbc-news",
-        "name": "BBC News"
-      },
-      "author": "BBC News",
-      "title": "The Satanic Temple: Think you know about Satanists? Maybe you don't",
-      "description": "Rituals, blasphemy, and English breakfast tea: Step inside The Satanic Temple's annual convention.",
-      "url": "http://www.bbc.co.uk/news/world-us-canada-65549975",
-      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/FBA0/production/_129661446_satanconchapel.jpg",
-      "publishedAt": "2023-05-20T00:52:15.2058658Z",
-      "content": "This may be the world's largest ever gathering of Satanists - and it's about to begin at a Marriott hotel in downtown Boston.\r\nIn a candle-lit room set aside for Satanic ceremonies, a neon sign welco… [+12939 chars]"
-    },
-    {
-      "source": {
-        "id": "bbc-news",
-        "name": "BBC News"
-      },
-      "author": "BBC News",
-      "title": "Decorated police officer charged with tipping off Proud Boys leader",
-      "description": "Prosecutors say Shane Lamond leaked confidential information to Proud Boys leader Enrique Tarrio.",
-      "url": "http://www.bbc.co.uk/news/world-us-canada-65651995",
-      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/15B74/production/_129784988_gettyimages-1236695868.jpg",
-      "publishedAt": "2023-05-19T22:07:16.799702Z",
-      "content": "A Washington DC police officer who was given an award for his work during the Capitol riot has been arrested on suspicion of leaking information to the far-right Proud Boys.\r\nProsecutors say Shane La… [+3582 chars]"
-    },
-    {
-      "source": {
-        "id": "bbc-news",
-        "name": "BBC News"
-      },
-      "author": "BBC News",
-      "title": "US debt ceiling: Republicans hit pause on negotiations for now",
-      "description": "The lead Republican negotiator walks out of a closed-door meeting with White House representatives.",
-      "url": "http://www.bbc.co.uk/news/world-us-canada-65649229",
-      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/2BF0/production/_129784211_gettyimages-1255494965.jpg",
-      "publishedAt": "2023-05-19T16:52:20.7695821Z",
-      "content": "Congressional Republicans have paused negotiations to raise the debt ceiling, casting doubt over talks to avoid a default.\r\nGarret Graves, the lead Republican negotiator, left a closed-door meeting w… [+693 chars]"
-    }
-  ]
-
+  
   constructor(){
     super();
-    console.log('Hello I am a constructor');
     this.state = {
-      articlse: this.articles,
-      loading: false
+      articles: [],
+      loading: false,
+      page: 1
     }
+  }
+
+  async componentDidMount(){
+    let url = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=8935beed65a44170978c421f7a4aaa87";
+    let data = await fetch(url);
+    let parseData = await data.json();
+    console.log(parseData);
+    this.setState({articles: parseData.articles});
   }
 
   render() {
@@ -175,9 +25,9 @@ export class News extends Component {
       <div className='container my-3'>
         <h2>News - Top Hedlines</h2>
         <div className="row my-5">
-          {this.state.articlse.map((element)=>{
+          {this.state.articles.map((element)=>{
             return <div className="col-md-4" key={element.url}>
-              <Newsitems title={element.title.slice(0, 45)} description={element.description.slice(0, 88)} imageUrl={element.urlToImage} newsUrl={element.url}/>
+              <Newsitems title={element.title} description={element.description} imageUrl={element.urlToImage} newsUrl={element.url}/>
             </div>
           })}
         </div>
