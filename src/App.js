@@ -16,17 +16,18 @@ export default class App extends Component {
       <div>
         <Router>
           <Navbar/>
-          {/* <News pageSize={11} country="in" category="sports"/> */}
+          {/* <News pageSize={11} country="in" category="general"/> */}
           <Routes>
-            <Route  path="/general" element={<News key="general" pageSize={11} country="in" category="general"/>}/>
-            {/* <Route path="/about"element={<News pageSize={11} country="in" category="sports"/>}/> */}
-            <Route  path="/business" element={<News pageSize={11} country="in" category="business"/>}/>
-            <Route  path="/entertainment" element={<News key="entertainment" pageSize={11} country="in" category="entertainment"/>}/>
-            <Route  path="/general" element={<News key="general" pageSize={11} country="in" category="general"/>}/>
-            <Route  path="/health" element={<News key="health" pageSize={11} country="in" category="health"/>}/>
-            <Route  path="/science" element={<News key="science" pageSize={11} country="in" category="science"/>}/>
-            <Route  path="/sports" element={<News key="sports" pageSize={11} country="in" category="sports"/>}/>
-            <Route  path="/technology" element={<News key="technology" pageSize={11} country="in" category="technology"/>}/>
+            <Route exact path="/" element={<News key="general" pageSize={11} country="in" category="general"/>}/>
+            {/* <Route exact path="/general" element={<News pageSize={11} country="in" category="sports"/>}/> */}
+            {/* <Roexactute path="/about"element={<News pageSize={11} country="in" category="sports"/>}/> */}
+            <Route exact path="/business" element={<News key="business" pageSize={11} country="in" category="business"/>}/>
+            <Route exact path="/entertainment" element={<News key="entertainment" pageSize={11} country="in" category="entertainment"/>}/>
+            <Route exact path="/general" element={<News key="general" pageSize={11} country="in" category="general"/>}/>
+            <Route exact path="/health" element={<News key="health" pageSize={11} country="in" category="health"/>}/>
+            <Route exact path="/science" element={<News key="science" pageSize={11} country="in" category="science"/>}/>
+            <Route exact path="/sports" element={<News key="sports" pageSize={11} country="in" category="sports"/>}/>
+            <Route exact path="/technology" element={<News key="technology" pageSize={11} country="in" category="technology"/>}/>
           </Routes>
         </Router>
       </div>
